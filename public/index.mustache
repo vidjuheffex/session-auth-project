@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Document</title>
+        <link href="/css/styles.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <h1>Welcome {{session.user.username}}</h1>
+        <form action ="/logout" method="get">
+            <button type="submit">Logout</button>
+        </form>
+        {{!--<form >--}}
+            <button id="clicksButton">{{session.clicks}}</button>
+        {{!--</form>--}}
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
+    <script>
+</html>
